@@ -1,0 +1,151 @@
+body {
+    background-image: linear-gradient(315deg, #000000 0%, #ffffff 74%);
+}
+
+.text-shadow {
+    text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.highlight-orange-text {
+    color: var(--ICONS-ORANGE);
+}
+
+.highlight-white-text {
+    color: var(--PURE-WHITE);
+}
+
+.margin-bot-med {
+    margin-bottom: 1rem;
+}
+
+.divider {
+    height: 1px;
+    width: auto;
+    background: var(--ICONS-ORANGE);
+}
+
+.margin-bot-lrg {
+    margin-bottom: 4rem;
+}
+
+.text-black {
+    color: black;
+    font-size: 1.6rem;
+}
+
+.text-white {
+    color: white;
+    font-size: 1.6rem;
+}
+.margin-top-lrg{
+    margin-top: 4rem;
+}
+.highlight-code{
+    font-size: 1.6rem;
+    border: var(--ICONS-ORANGE) 1px solid;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: var(--DEE2E6);
+    font-weight: 800;
+    width: inherit;
+}
+
+/*----------------- navigation menu */
+
+.component-navigation {
+
+    height: 13rem;
+    box-shadow: 0 2px 3px -1px rgb(0 0 0 / 10%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navigation-pri-part {
+    display: flex;
+
+}
+
+.navigation-pri-part>h1 {
+    font-size: 7rem;
+    margin: 0;
+    align-self: flex-end;
+}
+
+.navigation-end-part {
+    align-self: flex-end;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+.nav-btn-icon {
+    font-size: 3rem;
+    transition: all ease-in .3s;
+}
+
+
+.nav-btn-icon+.nav-btn-icon {
+    margin-left: 1rem;
+}
+
+.nav-btn-icon:hover {
+    color: var(--ICONS-ORANGE);
+}
+
+/* full -body css */
+.universal-container {
+
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "aside-nav  main main main main";
+}
+
+.aside-nav {
+    grid-area: aside-nav;
+    margin-left: 9rem;
+
+}
+
+.aside-link {
+    font-size: 2rem;
+}
+
+.aside-container-pri {
+    margin-left: 2rem;
+}
+
+.aside-container-pri h2 {
+    border-bottom: 3px solid var(--ICONS-ORANGE);
+}
+
+.aside-ul-li {
+    list-style: none;
+}
+
+.aside-ul-li :hover {
+    margin-left: 2rem;
+}
+/* active li anchors  */
+.active-aside-link{
+ margin-left: 2rem;
+ text-decoration: underline solid 2px var(--ICONS-ORANGE);
+}
+
+.aside-ul-li:focus {
+    margin-left: 2rem;
+    color: var(--ICONS-ORANGE);
+
+}
+
+.universal-container-main {
+    grid-area: main;
+    margin-top: 1.3rem;
+}
+
+.doc-content {
+    width: 80%;
+    margin-left: 2rem;
+}
