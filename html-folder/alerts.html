@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- styles from piston-component -->
+    <link rel="stylesheet" href="https://loving-shockley-e39c7a.netlify.app/styles.css">
+    <!-- For Icons from awesome fonts -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Highlight -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+    <!-- linked to documentation styles -->
+    <link rel="stylesheet" href="../documentation.css">
+    <title>Piston UI</title>
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav class="component-navigation">
+
+        <div class="navigation-pri-part">
+            <div class="logo-container"><img src="../assets/90px-90px.png" alt="Beautiful piston"></div>
+            <h1 class="text-shadow "> PISTON <span class="highlight-orange-text">UI</span></h1>
+        </div>
+        <div class="navigation-end-part">
+
+            <a href="https://github.com/Dev-AkshatGupta" class="nav-btn-icon highlight-white-text" target="blank"><i
+                    class="fab fa-github"></i>
+            </a>
+            <a href="https://twitter.com/Akshat86604233" class="nav-btn-icon highlight-white-text" target="blank"><i
+                    class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/akshat-gupta-257914157/" class="nav-btn-icon
+        highlight-white-text" target="blank"><i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+
+    </nav>
+    <!-- full body HTML -->
+    <div class="universal-container">
+        <aside class="aside-nav box-shadow-right">
+            <div class="aside-container-pri ">
+                <a href="" class="link-btn">
+                    <h2>Get Started</h2>
+                </a>
+
+                <ul class="aside-ul">
+                    <li class="aside-ul-li margin-bot-med">
+                        <a href="" class="aside-link link-btn ">Introduction</a>
+                    </li>
+                    <li class="aside-ul-li margin-bot-med">
+                        <a href="" class="aside-link link-btn">Colors</a>
+                    </li>
+                    <li class="aside-ul-li margin-bot-med">
+                        <a href="" class="aside-link link-btn">Typography</a>
+                    </li>
+                    <li class="aside-ul-li margin-bot-med">
+                        <a href="" class="aside-link link-btn">Conclusion</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="aside-container-pri">
+                <a href="" class="link-btn">
+                    <h2>Components</h2>
+                </a>
+                <ul class="aside-ul">
+                    <li class="aside-ul-li margin-bot-med">
+                        <a href="" class="aside-link link-btn ">Avatar</a>
+                    </li>
+                    <li class="aside-ul-li margin-bot-med">
+                        <a href="" class="aside-link link-btn active-aside-link">Alert</a>
+                    </li>
+                    <li class="aside-ul-li margin-bot-med">
+                        <a href="" class="aside-link link-btn">Badge</a>
+                    </li>
+                    <li class="aside-ul-li margin-bot-med">
+                        <a href="" class="aside-link link-btn">Button</a>
+                    </li>
+                    <li class="aside-ul-li margin-bot-med">
+                        <a href="" class="aside-link link-btn">Card</a>
+                    </li>
+                    <li class="aside-ul-li margin-bot-med">
+                        <a href="" class="aside-link link-btn">Image</a>
+                    </li>
+                    <li class="aside-ul-li margin-bot-med">
+                        <a href="" class="aside-link link-btn">Input</a>
+                    </li>
+
+                </ul>
+            </div>
+        </aside>
+        <div class="universal-container-main">
+            <div class="doc-content">
+                <h1>Alerts</h1>
+                <p class="text-black">Alerts is a way to attract users attention towards a special event or thing we
+                    want user attention towards specifically any message or error </p>
+                <div class="divider margin-bot-lrg margin-top-lrg"></div>
+                <h2>Simple Alerts</h2>
+                <p class="text-black">
+                    These alerts are very simple and with color options can be used for various purposes.
+                </p>
+                <div class="components-representation-block flex-space-evenly-center-column smooth-square-radius">
+
+                    <div class="alert code-repre-padd ">
+                        <strong>Primary !</strong> This is a Primary Alert - Check it now!
+                    </div>
+
+
+                    <div class="alert error code-repre-padd ">
+                        <strong>Error !</strong> This is an Error Alert - Check it now!
+                    </div>
+
+
+
+                    <div class="alert success code-repre-padd ">
+                        <strong>Success !</strong> This is a Success Alert - Check it now!
+                    </div>
+
+                    <div class="alert warning code-repre-padd">
+
+                        <strong>Warning !</strong> This is a Warning Alert - Check it now!
+                    </div>
+
+                   
+
+                </div>
+                <pre><code class="html highlight-code smooth-square-radius"> 
+                <div class="alert">
+                    <strong>Primary !</strong> This is a Primary Alert - Check it now!
+                </div>
+                        
+            
+                <div class="alert error">
+                    <strong>Error !</strong> This is an Error Alert - Check it now!
+                </div>      
+            
+            
+                <div class="alert success">
+                    <strong>Success !</strong> This is a Success Alert - Check it now!
+                </div>
+
+            
+                <div class="alert warning">                
+                    <strong>Warning !</strong> This is a Warning Alert - Check it now!
+                </div>
+         </code></pre>
+                <div class="divider margin-bot-lrg margin-top-lrg"></div>
+                <h2>Bordered Alerts</h2>
+                <p class="text-black"><strong>PISTON <span
+                            class="highlight-orange-text">UI</span></strong> includes soft
+                    cornered outlined alerts for making your UX much better and you have to do less at your end. </p>
+                <div class="components-representation-block flex-space-evenly-center-column smooth-square-radius">
+                    <div class="alert outline code-repre-padd">
+                        <strong>Primary !</strong> This is a Primary Alert - Check it now!
+                    </div>
+
+
+                    <div class="alert error outline code-repre-padd">
+                        <strong>Error !</strong> This is an Error Alert - Check it now!
+                    </div>
+
+
+
+                    <div class="alert success outline code-repre-padd">
+                        <strong>Success !</strong> This is a Success Alert - Check it now!
+                    </div>
+
+                    <div class="alert warning outline code-repre-padd">
+
+                        <strong>Warning !</strong> This is a Warning Alert - Check it now!
+                    </div>
+                </div>
+                <pre><code class="html highlight-code smooth-square-radius "> <div class="alert outline">
+                    <strong>Primary !</strong> This is a Primary Alert - Check it now!
+                </div>
+
+
+                <div class="alert error outline">
+                    <strong>Error !</strong> This is an Error Alert - Check it now!
+                </div>
+
+
+
+                <div class="alert success outline">
+                    <strong>Success !</strong> This is a Success Alert - Check it now!
+                </div>
+
+                <div class="alert warning outline">
+
+                    <strong>Warning !</strong> This is a Warning Alert - Check it now!
+                </div>
+                 </code></pre>
+
+            </div>
+
+
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+        <script src="../index.js"></script>
+</body>
+
+</html>
