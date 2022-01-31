@@ -15,6 +15,8 @@ body {
     color: var(--PURE-WHITE);
 }
 
+
+
 .margin-bot-med {
     margin-bottom: 1rem;
 }
@@ -55,12 +57,17 @@ body {
 .components-representation-block {
     background-color: var(--PURE-WHITE);
     border: 1px solid var(--ICONS-ORANGE);
-    width: 95%;
+    width: 100%;
 }
-
+.display-none{
+    display: none;
+}
 .code-repre-padd {
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+.btn+.btn{
+    margin-left:1rem;
 }
 .flex-space-evenly-center-column{
     display: flex;
@@ -103,6 +110,7 @@ body {
 
 .nav-btn-icon {
     font-size: 3rem;
+    color: black;
     transition: all ease-in .3s;
 }
 
