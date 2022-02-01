@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon  linked -->
+    <link rel="shortcut icon" type="image/jpg" href="../assets/faicon2.png"/>
+    <!-- styles from piston-component -->
+    <link rel="stylesheet" href="https://loving-shockley-e39c7a.netlify.app/styles.css">
+    <!-- For Icons from awesome fonts -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Highlight -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+    <!-- linked to documentation styles -->
+    <link rel="stylesheet" href="../documentation.css">
+    <title>Piston UI</title>
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav class="component-navigation">
+
+        <div class="navigation-pri-part">
+            <div class="logo-container"><img src="../assets/90px-90px.png" alt="Beautiful piston"></div>
+            <h1 class="text-shadow"> PISTON <span class="highlight-orange-text">UI</span></h1>
+        </div>
+        <div class="navigation-end-part">
+
+            <a href="https://github.com/Dev-AkshatGupta" class="nav-btn-icon highlight-white-text" target="blank"><i
+                    class="fab fa-github"></i>
+            </a>
+            <a href="https://twitter.com/Akshat86604233" class="nav-btn-icon highlight-white-text" target="blank"><i
+                    class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/akshat-gupta-257914157/" class="nav-btn-icon
+        highlight-white-text" target="blank"><i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+
+    </nav>
+    <!-- full body HTML -->
+    <div class="universal-container">
+        <aside class="aside-nav box-shadow-right">
+            <div class="aside-container-pri">
+                <a href="" class="link-btn">
+                    <h2>Get Started</h2>
+                </a>
+
+                <ul class="aside-ul">
+                    <li class="aside-ul-li margin-bot-med">
+                        <a href="./index.html" class="aside-link link-btn active-aside-link">Introduction</a>
+                    </li>
+                    <li class="aside-ul-li margin-bot-med">
+                        <a href="" class="aside-link link-btn">Colors</a>
+                    </li>
+                    <li class="aside-ul-li margin-bot-med">
+                        <a href="" class="aside-link link-btn">Typography</a>
+                    </li>
+                    <li class="aside-ul-li margin-bot-med">
+                        <a href="" class="aside-link link-btn">Conclusion</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="aside-container-pri">
+                <a href="" class="link-btn">
+                    <h2>Components</h2>
+                </a>
+                <ul class="aside-ul">
+                    <li class="aside-ul-li margin-bot-med">
+                        <a href="./html-folder/avatars.html" class="aside-link link-btn ">Avatar</a>
+                    </li>
+                    <li class="aside-ul-li margin-bot-med">
+                        <a href="./html-folder/alerts.html" class="aside-link link-btn">Alert</a>
+                    </li>
+                    <li class="aside-ul-li margin-bot-med">
+                        <a href="./badges.html" class="aside-link link-btn  active-aside-link">Badge</a>
+                    </li>
+                    <li class="aside-ul-li margin-bot-med">
+                        <a href="./buttons.html" class="aside-link link-btn">Button</a>
+                    </li>
+                    <li class="aside-ul-li margin-bot-med">
+                        <a href="./cards.html" class="aside-link link-btn">Card</a>
+                    </li>
+                    <li class="aside-ul-li margin-bot-med">
+                        <a href="./image.html" class="aside-link link-btn">Image</a>
+                    </li>
+                    <li class="aside-ul-li margin-bot-med">
+                        <a href="./inputs.html" class="aside-link link-btn">Input</a>
+                    </li>
+
+                </ul>
+                
+            </div>
+        </aside>
+        <div class="universal-container-main">
+            <div class="doc-content">
+                <h1>Inputs</h1>
+                <p class="text-black">Inputs are a different form of taking inputs form the user and act accordingly this way is very common which is used for authentication and many other purposes. </p>
+                <div class="divider margin-bot-lrg margin-top-lrg"></div>
+                <h2>Form Inputs</h2>
+                <p class="text-black">
+                    Inputs which are taken for authentication or for other purposes on websites.
+                </p>
+                <div class="components-representation-block flex-space-evenly-center smooth-square-radius">
+                    <form class="form flex-column-center card-shadow code-repre-padd">
+                        <input type="email" name="email-id" class="form-input" placeholder="Enter Your Email">
+                        <input type="password" name="password" class="form-input" placeholder="Enter Your Password">
+                        <button class="btn btn-outline-pri form-btn smooth-square-radius ">Sign-In</button>
+            
+                    </form>
+                 </div>
+<pre><code class="html highlight-code smooth-square-radius">   
+<form class="form flex-column-center card-shadow">
+<input type="email" name="email-id" class="form-input" placeholder="Enter Your Email">
+<input type="password" name="password" class="form-input" placeholder="Enter Your Password">
+<button class="btn btn-outline-pri form-btn smooth-square-radius ">Sign-In</button>
+</form>
+         </code></pre>
+                <div class="divider margin-bot-lrg margin-top-lrg"></div>
+                
+                <h2>Inputs with error</h2>
+                <p class="text-black">
+                    Input showing error to the user.
+                </p>
+                <div class="components-representation-block flex-space-evenly-center smooth-square-radius">
+                    <form class="form card-shadow code-repre-padd">
+                        <h4 class="error-message">Please enter right email and password</h4>
+                        <input type="email" name="email-id" class="form-input form-input-error" placeholder="Enter Your Email">
+                        <input type="password" name="password" class="form-input form-input-error"
+                            placeholder="Enter Your Password">
+                        <button class="btn form-btn smooth-square-radius ">Sign-In</button>
+            
+                    </form>
+                 </div>
+<pre><code class="html highlight-code smooth-square-radius">   
+<form class="form card-shadow">
+<h4 class="error-message">Please enter right email and password</h4>
+<input type="email" name="email-id" class="form-input form-input-error" placeholder="Enter Your Email">
+<input type="password" name="password" class="form-input form-input-error"
+    placeholder="Enter Your Password">
+<button class="btn form-btn smooth-square-radius ">Sign-In</button>
+
+</form>
+         </code></pre>
+         <div class="divider margin-bot-lrg margin-top-lrg"></div>
+                
+         <h2>TextArea Inputs</h2>
+         <p class="text-black">
+             Textarea inputs helps take inputs from the user in the form of the 
+         </p>
+         <div class="components-representation-block flex-space-evenly-center smooth-square-radius">
+            <div class="text-area flex-column card-shadow code-repre-padd">
+                <textarea name="" cols="30" rows="10" class="smooth-square-radius">Enter your message</textarea>
+                <button class="btn "><i class="fas fa-paper-plane"></i> Submit text</button>
+           </div>
+          </div>
+<pre><code class="html highlight-code smooth-square-radius">   
+<div class="text-area flex-column card-shadow">
+<textarea name="" cols="30" rows="10" class="smooth-square-radius">
+Enter your message</textarea>
+<button class="btn "><i class="fas fa-paper-plane"></i> Submit text</button>
+</div>
+  </code></pre>
+  
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script src="../index.js"></script>
+</body>
+
+</html>
