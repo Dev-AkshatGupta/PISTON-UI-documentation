@@ -47,6 +47,29 @@
     .menu-btn.open .menu-btn__burger::after {
       transform: rotate(-45deg) translate(35px, 35px);
     }
+    /* dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 25rem;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        margin-top: 1rem;
+      }
+      
+      .show {display: block;}
+
+
+/* droppdown content above */
+
+
     @media only screen and (max-width:800px){
         .menu-btn{
             display: block;
