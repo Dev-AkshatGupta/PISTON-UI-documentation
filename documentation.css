@@ -1,6 +1,17 @@
+:root {
+    --background-color: #948D73;
+    --code-box-background-color: #E0D6AF;
+}
+
+
+
+.background-white{
+    background-color: var(--PURE-WHITE);
+}
+
 
 body {
-    background-image: linear-gradient(315deg, #6a6a6a 0%, #ffffff 74%);
+    background: var(--background-color);
 }
 
 .text-shadow {
@@ -32,12 +43,12 @@ body {
 }
 
 .text-black {
-    color: black;
+    color: var(--PURE-BLACK);
     font-size: 1.6rem;
 }
 
 .text-white {
-    color: white;
+    color: var(--PURE-WHITE);
     font-size: 1.6rem;
 }
 
@@ -55,26 +66,31 @@ body {
 }
 
 .components-representation-block {
-    background-color: var(--PURE-WHITE);
+    background-color: var(--code-box-background-color);
     border: 1px solid var(--ICONS-ORANGE);
     width: 100%;
 }
-.display-none{
+
+.display-none {
     display: none;
 }
+
 .code-repre-padd {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
-.btn+.btn{
-    margin-left:1rem;
+
+.btn+.btn {
+    margin-left: 1rem;
 }
-.flex-space-evenly-center-column{
+
+.flex-space-evenly-center-column {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 }
+
 .flex-space-evenly-center {
     display: flex;
     justify-content: space-evenly;
@@ -85,15 +101,21 @@ body {
 
 .component-navigation {
     height: 13rem;
+    width: 100%;
     box-shadow: 0 2px 3px -1px rgb(0 0 0 / 10%);
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .navigation-pri-part {
     display: flex;
+}
+
+.logo-container {
+    margin-right: 1.5rem;
+    margin-left: 3rem;
 }
 
 .navigation-pri-part>h1 {
@@ -110,7 +132,6 @@ body {
 
 .nav-btn-icon {
     font-size: 3rem;
-    color: black;
     transition: all ease-in .3s;
 }
 
@@ -128,15 +149,14 @@ body {
 
     display: grid;
     height: 100%;
-    grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 9rem 22rem 85rem 18.7rem;
     grid-template-areas:
-        "aside-nav  main main main main";
+        "... aside-nav  main ...";
 }
 
 .aside-nav {
     grid-area: aside-nav;
-    margin-left: 9rem;
-   
+
 }
 
 .aside-link {
@@ -153,6 +173,7 @@ body {
 
 .aside-ul-li {
     list-style: none;
+    /* transition: all 5s ease-in-out; */
 }
 
 .aside-ul-li :hover {
@@ -177,6 +198,104 @@ body {
 }
 
 .doc-content {
-    width: 80%;
     margin-left: 2rem;
 }
+/*----------------------------- Responsiveness-----------------------------------  */
+@media only screen and (max-width:1200px){
+
+    .universal-container {
+
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2rem;
+        grid-template-areas:
+            "aside-nav  main main main main ...";
+    }
+
+
+}
+
+@media only screen and (max-width:800px) {
+    html {
+        font-size: 100%;
+    }
+    /* Heading resizing */
+    .navigation-pri-part>h1{
+        font-size: 5rem;
+    }
+    /* centering CL name */
+
+    .component-navigation{
+        justify-content: flex-start;
+    }
+    .logo-container{
+        align-self: center;
+       
+    }
+    /* Content div resizing */
+    .universal-container {
+        margin-right: 1rem;
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            " main main main main ";
+    }
+    /* removing logo */
+    .logo-container>img {
+        display: none;
+    }
+    /* removing socials */
+    .navigation-end-part {
+        display: none;
+    }
+    /* removing aside */
+    aside {
+        display: none;
+    }
+}
+
+/* for mobile view */
+
+
+@media only screen and (max-width:500px) {
+    html {
+        font-size: 62.5%;
+    }
+    /* Heading resizing */
+    .navigation-pri-part>h1{
+        font-size: 5rem;
+    }
+    /* centering CL name */
+
+    .component-navigation{
+        justify-content: flex-start;
+    }
+    .logo-container{
+        align-self: center;
+       
+    }
+    /* Content div resizing */
+    .universal-container {
+        margin-right: 1rem;
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            " main main main main ";
+    }
+    /* removing logo */
+    .logo-container>img {
+        display: none;
+    }
+    /* removing socials */
+    .navigation-end-part {
+        display: none;
+    }
+    /* removing aside */
+    aside {
+        display: none;
+    }
+}
+
+

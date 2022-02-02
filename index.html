@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- hamburger css linked -->
+    <link rel="stylesheet" href="./hamburger.css">
     <!-- favicon  linked -->
-    <link rel="shortcut icon" type="image/jpg" href="./assets/faicon2.png"/>
+    <link rel="shortcut icon" type="image/jpg" href="./assets/faicon2.png" />
     <!-- styles from piston-component -->
     <link rel="stylesheet" href="https://loving-shockley-e39c7a.netlify.app/styles.css">
     <!-- For Icons from awesome fonts -->
@@ -24,11 +26,61 @@
     <nav class="component-navigation">
 
         <div class="navigation-pri-part">
-            <div class="logo-container"><img src="./assets/90px-90px.png" alt="Beautiful piston"></div>
+            <div class="logo-container"><img src="./assets/90px-90px.png" alt="Beautiful piston">
+
+                <!-- optional hamburger on small size-port-->
+                <div class="menu-btn ">
+                    <div class="menu-btn__burger"></div>
+                    <div id="myDropdown" class="dropdown-content">
+                        <div class="aside-container-pri">
+                            <a href="" class="link-btn">
+                                <h2>Get Started</h2>
+                            </a>
+
+                            <ul class="aside-ul">
+                                <li class="aside-ul-li margin-bot-med">
+                                    <a href="./index.html"
+                                        class="aside-link link-btn active-aside-link">Introduction</a>
+                                </li>
+                                <li class="aside-ul-li margin-bot-med">
+                                    <a href="./html-folder/avatars.html" class="aside-link link-btn ">Avatar</a>
+                                </li>
+                                <li class="aside-ul-li margin-bot-med">
+                                    <a href="./html-folder/alerts.html" class="aside-link link-btn">Alert</a>
+                                </li>
+                                <li class="aside-ul-li margin-bot-med">
+                                    <a href="./html-folder/badges.html" class="aside-link link-btn">Badge</a>
+                                </li>
+                                <li class="aside-ul-li margin-bot-med">
+                                    <a href="./html-folder/buttons.html" class="aside-link link-btn">Button</a>
+                                </li>
+                                <li class="aside-ul-li margin-bot-med">
+                                    <a href="./html-folder/cards.html" class="aside-link link-btn">Card</a>
+                                </li>
+                                <li class="aside-ul-li margin-bot-med">
+                                    <a href="./html-folder/image.html" class="aside-link link-btn">Image</a>
+                                </li>
+                                <li class="aside-ul-li margin-bot-med">
+                                    <a href="./html-folder/inputs.html" class="aside-link link-btn">Input</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
             <h1 class="text-shadow"> PISTON <span class="highlight-orange-text">UI</span></h1>
         </div>
-        <div class="navigation-end-part">
-
+        <div  class="navigation-end-part">
+            <a class="nav-btn-icon highlight-white-text" >
+                <i  id="toggle-theme" class="fas fa-sun"></i>
+            </a>
+            <!-- <a class="nav-btn-icon highlight-white-text ">
+                <i class="fas fa-moon display-none" id="dark-mode"></i>
+            </a> -->
             <a href="https://github.com/Dev-AkshatGupta" class="nav-btn-icon highlight-white-text" target="blank"><i
                     class="fab fa-github"></i>
             </a>
@@ -77,7 +129,7 @@
                         <a href="./html-folder/alerts.html" class="aside-link link-btn">Alert</a>
                     </li>
                     <li class="aside-ul-li margin-bot-med">
-                        <a href="" class="aside-link link-btn">Badge</a>
+                        <a href="./html-folder/badges.html" class="aside-link link-btn">Badge</a>
                     </li>
                     <li class="aside-ul-li margin-bot-med">
                         <a href="./html-folder/buttons.html" class="aside-link link-btn">Button</a>
@@ -89,11 +141,11 @@
                         <a href="./html-folder/image.html" class="aside-link link-btn">Image</a>
                     </li>
                     <li class="aside-ul-li margin-bot-med">
-                        <a href="" class="aside-link link-btn">Input</a>
+                        <a href="./html-folder/inputs.html" class="aside-link link-btn">Input</a>
                     </li>
 
                 </ul>
-                
+
             </div>
         </aside>
         <div class="universal-container-main">
@@ -115,8 +167,7 @@
                 <h2>Customizing Themes</h2>
                 <p class="text-black">Though most of your requirements are taken care of by the <strong>PISTON <span
                             class="highlight-orange-text">UI</span></strong> but in case of making projects some of
-                    special requirements may come . </p>
-                <p class="text-black">So , for this you can over-ride pre-defined styles by writing your own classes
+                    special requirements may come . So , for this you can over-ride pre-defined styles by writing your own classes
                     having different styles.Piston comes with full flexibility as per the users requirements. </p>
 
             </div>
@@ -127,7 +178,10 @@
 
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script src="./javascript/hamburger.js"></script>
     <script src="./index.js"></script>
+    
+
 </body>
 
 </html>
