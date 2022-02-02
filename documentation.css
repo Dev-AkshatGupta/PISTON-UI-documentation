@@ -5,8 +5,8 @@
 
 
 
-.background-white{
-    background-color: var(--PURE-WHITE);
+.code-background-color{
+    background-color: var(--code-box-background-color);
 }
 
 
@@ -95,6 +95,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 /*----------------- navigation menu */
