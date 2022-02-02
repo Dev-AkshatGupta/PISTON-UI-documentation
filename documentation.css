@@ -5,7 +5,9 @@
 
 
 
-
+.background-white{
+    background-color: var(--PURE-WHITE);
+}
 
 
 body {
@@ -199,15 +201,15 @@ body {
     margin-left: 2rem;
 }
 /*----------------------------- Responsiveness-----------------------------------  */
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width:1200px){
 
     .universal-container {
 
         display: grid;
         height: 100%;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2rem;
         grid-template-areas:
-            "aside-nav  main main main main ";
+            "aside-nav  main main main main ...";
     }
 
 
@@ -226,7 +228,10 @@ body {
     .component-navigation{
         justify-content: flex-start;
     }
-    
+    .logo-container{
+        align-self: center;
+       
+    }
     /* Content div resizing */
     .universal-container {
         margin-right: 1rem;

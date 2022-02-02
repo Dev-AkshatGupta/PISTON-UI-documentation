@@ -34,12 +34,11 @@ menuBtn.addEventListener('click', () => {
 const sun=document.querySelector("#light-mode");
 const sunIcon=document.querySelector(".fa-sun");
 const moon=document.querySelector("#dark-mode");
-sun.addEventListener("click",()=>{
-  console.log("fuck");
-});
-sunIcon.addEventListener("click",()=>{
-  console.log("icon");
-});
+function clickHandler(){
+  console.log("click");
+}
+sun.addEventListener("click",clickHandler);
+sunIcon.addEventListener("click",clickHandler);
 
 
 
