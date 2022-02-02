@@ -12,36 +12,19 @@
       })
     })
   }
-  // for hamburger menu button on small visualViewport
-
-  const menuBtn = document.querySelector('.menu-btn');
-const dropDownContent=document.querySelector(".dropdown-content");
-let menuOpen = false;
-menuBtn.addEventListener('click', () => {
-    myDropdown.classList.toggle("show");
-  if(!menuOpen) {
-    menuBtn.classList.add('open');
-    menuOpen = true;
-  } else {
-    menuBtn.classList.remove('open');
-    menuOpen = false;
-  }
- 
-});
+  
 
 // For the dark and light mode
-
-const sun=document.querySelector("#light-mode");
-const sunIcon=document.querySelector(".fa-sun");
-const moon=document.querySelector("#dark-mode");
+const sun=document.querySelector("#toggle-theme");
+const moon=document.querySelector(".fa-moon");
 function clickHandler(){
-  console.log("click");
+  sun.toggle.classList("fa-moon");
+  sun.remove.classList("fa-sun");
 }
 sun.addEventListener("click",clickHandler);
-sunIcon.addEventListener("click",clickHandler);
-
-
-
-
+moon.addEventListener("click",()=>{
+  moon.toggle.classList("fa-sun");
+  moon.remove.classList("fa-moon");
+})
 
 

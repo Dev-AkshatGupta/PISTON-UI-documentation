@@ -254,3 +254,48 @@ body {
         display: none;
     }
 }
+
+/* for mobile view */
+
+
+@media only screen and (max-width:500px) {
+    html {
+        font-size: 62.5%;
+    }
+    /* Heading resizing */
+    .navigation-pri-part>h1{
+        font-size: 5rem;
+    }
+    /* centering CL name */
+
+    .component-navigation{
+        justify-content: flex-start;
+    }
+    .logo-container{
+        align-self: center;
+       
+    }
+    /* Content div resizing */
+    .universal-container {
+        margin-right: 1rem;
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            " main main main main ";
+    }
+    /* removing logo */
+    .logo-container>img {
+        display: none;
+    }
+    /* removing socials */
+    .navigation-end-part {
+        display: none;
+    }
+    /* removing aside */
+    aside {
+        display: none;
+    }
+}
+
+
