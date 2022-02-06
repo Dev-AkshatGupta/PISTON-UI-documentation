@@ -1,5 +1,5 @@
 // For highlight js
-{
+
     document.addEventListener('DOMContentLoaded', (event) => {
       document.querySelectorAll('pre code').forEach((el) => {
         el.innerHTML = el.innerHTML
@@ -11,20 +11,22 @@
         hljs.highlightElement(el)
       })
     })
-  }
+  
   
 
-// For the dark and light mode
-const sun=document.querySelector("#toggle-theme");
-const moon=document.querySelector(".fa-moon");
-function clickHandler(){
-  sun.toggle.classList("fa-moon");
-  sun.remove.classList("fa-sun");
-}
-sun.addEventListener("click",clickHandler);
-moon.addEventListener("click",()=>{
-  moon.toggle.classList("fa-sun");
-  moon.remove.classList("fa-moon");
-})
 
+// For modal opening closing
+// const open=document.querySelector("#open-modal-btn");
+// const close=document.querySelector("#close-modal");
+
+// function openModal(){
+// document.getElementById("modal-open").style.display="block";
+// }
+
+// function closeModal(){
+//     document.getElementById("modal-open").style.display="none";
+// }
+
+// open.addEventListener("click",openModal);
+// close.addEventListener("click",closeModal);
 
