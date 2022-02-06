@@ -1,14 +1,8 @@
 .menu-btn {
-     /* position: relative; 
-    display: flex; 
-       justify-content: center; 
-       align-items: center; 
-       width: 80px; 
-       height: 80px; 
-       cursor: pointer;  */
+  
       transition: all .2s ease-in-out;
       display: none;
-       /* border: 3px solid #fff;  */
+       
     }
     .menu-btn__burger {
       width: 50px;
