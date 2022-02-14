@@ -27,7 +27,7 @@ To start using the components in your project, Copy-paste the stylesheet `<link>
 - [Input](https://piston-ui.netlify.app/html-folder/inputs.html)
 - [List](https://piston-ui.netlify.app/html-folder/lists.html)
 - [Modal](https://piston-ui.netlify.app/html-folder/modal.html)
-- [Navigation]https://piston-ui.netlify.app/html-folder/nav.html)
+- [Navigation](https://piston-ui.netlify.app/html-folder/nav.html)
 - [Rating](https://piston-ui.netlify.app/html-folder/ratings.html)
 - [Toast](https://piston-ui.netlify.app/html-folder/toast.html)
 - [Typography](https://piston-ui.netlify.app/html-folder/typography.html)
