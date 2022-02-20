@@ -1,15 +1,13 @@
-const open=document.querySelector("#open-modal-btn");
-const close=document.querySelector("#close-modal");
+const open = document.querySelector("#open-modal-btn");
+const close = document.querySelector("#close-modal");
 
-function openModal(){
-document.getElementById("modal-open").style.display="block";
-console.log("openmodal")
+function openModal() {
+    document.getElementById("modal-open").style.display = "block";
 }
 
-function closeModal(){
-    document.getElementById("modal-open").style.display="none";
-    console.log("closemodal");
+function closeModal() {
+    document.getElementById("modal-open").style.display = "none";
 }
 
-open.addEventListener("click",openModal);
-close.addEventListener("click",closeModal);
+open.addEventListener("click", openModal);
+close.addEventListener("click", closeModal);
