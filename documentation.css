@@ -104,11 +104,10 @@ body {
 .component-navigation {
     height: 13rem;
     width: 100%;
-    box-shadow: 0 2px 3px -1px rgb(0 0 0 / 10%);
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
+    
 }
 
 .navigation-pri-part {
