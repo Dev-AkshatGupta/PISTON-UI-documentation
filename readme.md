@@ -32,6 +32,7 @@ Every style that can be seen in this documentation website is made in a differen
 - [Rating](https://piston-ui.netlify.app/html-folder/ratings.html)
 - [Toast](https://piston-ui.netlify.app/html-folder/toast.html)
 - [Typography](https://piston-ui.netlify.app/html-folder/typography.html)
+- [Slider](https://piston-ui.netlify.app/html-folder/slider.html)
 
 
 
