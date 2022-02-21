@@ -13,7 +13,8 @@ To start using the components in your project, Copy-paste the stylesheet `<link>
         href="https://piston-components.netlify.app/styles.css"
     />
 ```
-
+## [Piston Components Github ](https://github.com/Dev-AkshatGupta/Piston-UI-component)
+Every style that can be seen in this documentation website is made in a different repository and that is being imported in it for any further use and same goes with other projects.
 
 ### [PISTON UI](https://piston-ui.netlify.app/index.html) contains the following components
 
@@ -31,6 +32,7 @@ To start using the components in your project, Copy-paste the stylesheet `<link>
 - [Rating](https://piston-ui.netlify.app/html-folder/ratings.html)
 - [Toast](https://piston-ui.netlify.app/html-folder/toast.html)
 - [Typography](https://piston-ui.netlify.app/html-folder/typography.html)
+- [Slider](https://piston-ui.netlify.app/html-folder/slider.html)
 
 
 
