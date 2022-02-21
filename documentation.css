@@ -1,6 +1,7 @@
 :root {
-    --background-color: #948D73;
-    --code-box-background-color: #E0D6AF;
+    --background-color: #f3e8ff;
+    --code-box-background-color: #fafafa;
+    --white:#FFFFFF;
 }
 
 
@@ -9,7 +10,9 @@
     background-color: var(--code-box-background-color);
 }
 
-
+.bg-c-white{
+    background-color: var(--white);
+}
 body {
     background: var(--background-color);
 }
@@ -22,9 +25,7 @@ body {
     color: var(--ICONS-ORANGE);
 }
 
-.highlight-white-text {
-    color: var(--PURE-WHITE);
-}
+
 
 
 
